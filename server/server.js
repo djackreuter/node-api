@@ -40,7 +40,7 @@ app.get('/todos/:id', (req, res) => {
     });
   }
   else {
-    res.send('ID is not valid');
+    res.status(404).send('ID is not valid');
   }
 });
 
